@@ -1,2 +1,3 @@
-# chat-app-node-2
-A basic nodejs chat app
+# Chat app
+
+A basic nodejs chat app using socket.io
