@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server); // create an instance of the server
 
-// routes
+// home routes
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
@@ -20,6 +20,7 @@ io.on("connection", (socket) => {
   });
 });
 
+// listen to event on port 3000
 server.listen(3000, () => {
   console.log("Server is listening on *:3000");
 });
